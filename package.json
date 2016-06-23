@@ -1,0 +1,28 @@
+{
+  "name": "oolon-monads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "oolon-livetape src/*.test.ls | tap-spec",
+    "test:watch": "oolon-livetape -w src/*.test.ls | tap-spec",
+    "build": "lsc -c -o . src/index.ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cullophid/oolon-monads.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cullophid/oolon-monads/issues"
+  },
+  "homepage": "https://github.com/cullophid/oolon-monads#readme",
+  "devDependencies": {
+    "livescript": "^1.5.0",
+    "oolon-livetape": "^1.0.2",
+    "sinon": "^1.17.4",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}
